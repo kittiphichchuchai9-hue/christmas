@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Christmas 3D Card</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle at top, #b71c1c, #7f0000);
+        font-family: 'Segoe UI', sans-serif;
+        perspective: 1200px;
+    }
+
+    .card {
+        width: 360px;
+        height: 480px;
+        background: linear-gradient(145deg, #d32f2f, #b71c1c);
+        border-radius: 25px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        transform-style: preserve-3d;
+        transition: transform 0.8s;
+        text-align: center;
+        color: #fff;
+        padding: 30px;
+    }
+
+    .card:hover {
+        transform: rotateY(15deg) rotateX(8deg);
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 10px;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        transform: translateZ(40px);
+    }
+
+    .tree {
+        font-size: 110px;
+        margin: 30px 0;
+        transform: translateZ(60px);
+        text-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+
+    .message {
+        font-size: 18px;
+        line-height: 1.6;
+        transform: translateZ(30px);
+    }
+
+    .ornaments span {
+        display: inline-block;
+        margin: 5px;
+        font-size: 24px;
+        transform: translateZ(50px);
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+        font-size: 14px;
+        color: #ffe082;
+        transform: translateZ(20px);
+    }
+</style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="title">Merry Christmas</div>
+
+        <div class="tree">🎄</div>
+
+        <div class="ornaments">
+            <span>✨</span>
+            <span>🎁</span>
+            <span>⭐</span>
+        </div>
+
+        <div class="message">
+            ขอให้วันคริสต์มาสนี้<br>
+            เต็มไปด้วยรอยยิ้ม ความสุข<br>
+            และความอบอุ่น ❤️
+        </div>
+
+        <div class="footer">
+            ด้วยความปรารถนาดี
+        </div>
+    </div>
+</body>
+</html>
